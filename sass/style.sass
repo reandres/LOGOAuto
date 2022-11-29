@@ -218,3 +218,48 @@
                 border-top: 3px solid #585858 
                 border-left: 3px solid #585858      
                 transform: rotate(135deg)
+
+.reviews
+    display: flex
+    justify-content: center
+    margin-top: 100px
+    height: 400px
+    &__review
+        display: inline-block
+        width: 640px
+        height: 400px
+        background: rgba(52, 108, 217, 0.12)
+    &__descr
+        margin: 0 auto
+        margin-top: 73px
+        width: 400px
+        font-weight: 600
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        color: #343434
+    &__name
+        margin-top: 30px
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        text-transform: uppercase
+        color: #343434
+    &__dots
+        display: flex
+        justify-content: center
+        align-items: center
+        .dot
+            margin: 40px 7px 0  0
+            list-style-type: none
+            width: 10px
+            height: 10px
+            background: rgba(255, 46, 99, 0.33)
+            border-radius: 100%
+            &:nth-last-child(3)
+                background: #FF2E63
+    &__picture
+        display: inline-block 
+        .img
+            width: 640px
+            height: 400px
