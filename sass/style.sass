@@ -84,3 +84,137 @@
         left: 525px
         width: 755px
         height: 400px
+
+.competitions
+    margin-top: 100px
+    min-height: 362px
+    &__text
+        font-weight: 700
+        font-size: 36px
+        line-height: 46px
+        color: #343434
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        .item
+            position: relative
+            margin-top: 40px
+            width: 270px
+            height: 283px
+            background: #FFFFFF
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15)
+            border-radius: 10px
+            &__img
+                width: 100%
+            &__descr
+                margin: 20px 0 0 20px
+                font-weight: 700
+                font-size: 18px
+            &__price
+                display: inline-block
+                margin: 5px 0 0 20px
+                font-weight: 700
+                font-size: 30px
+                color: #FF2E63
+            &__old_price
+                display: inline-block
+                font-weight: 500
+                font-size: 20px
+                text-decoration: line-through
+                color: #999999
+            &__text
+                margin: 15px 0 0 20px
+                font-weight: 400
+                font-size: 14px
+                line-height: 19px
+                color: #343434
+            &__button
+                position: absolute
+                bottom: 0
+                left: 85%
+                width: 40px
+                height: 40px
+                background: #346CD9
+                border-radius: 10px 0px
+                border: none
+                cursor: pointer
+            &__right
+                width: 16px
+                height: 10px   
+                position: relative
+                display: inline-flex
+                cursor: pointer 
+                &::before, &::after
+                    content: ''
+                    position: absolute
+                &::before
+                    content: ''
+                    width: 16px
+                    height: 2px
+                    background-color: #FFFFFF
+                    top: 5px
+                &::after
+                    content: ''
+                    left: 5px
+                    bottom: -1px
+                    width: 8px
+                    height: 8px
+                    border-top: 2px solid #FFFFFF
+                    border-left: 2px solid #FFFFFF    
+                    transform: rotate(135deg)
+                
+.how
+    margin-top: 100px
+    min-height: 280px
+    &__subheader
+        margin-top: 100px
+        font-weight: 700
+        font-size: 36px
+        text-align: center
+        color: #343434  
+    &__wrapper
+        margin-top: 60px
+        display: flex
+        justify-content: space-between
+        .item
+            width: 245px
+            height: 120px
+        .img
+            margin: 0 auto
+            width: 64px
+            height: 64px
+            display: block
+        .descr
+            margin-top: 30px
+            margin-bottom: 100px
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            color: #343434
+            span
+                color: #343434
+                font-weight: 600
+        .right
+            width: 45px
+            height: 10px   
+            position: relative
+            display: inline-flex
+            &::before, &::after
+                content: ''
+                position: absolute
+            &::before
+                content: ''
+                width: 25px
+                height: 3px
+                background-color: #585858  
+                top: 30px
+            &::after
+                content: ''
+                left: 13px
+                bottom: -28px
+                width: 10px
+                height: 10px
+                border-top: 3px solid #585858 
+                border-left: 3px solid #585858      
+                transform: rotate(135deg)
