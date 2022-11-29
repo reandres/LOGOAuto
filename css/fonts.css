@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'OpenSans_SemiCondensed-Bold';
+    src: url('../fonts/OpenSans_SemiCondensed-Bold.ttf');
+    src: url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('embedded-opentype'),
+         url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('woff'),
+         url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('truetype'),
+         url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    src: url('../fonts/OpenSans-Regular.ttf') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular.ttf') format('woff'),
+         url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular.ttf') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rajdhani-Bold';
+    src: url('../fonts/Rajdhani-Bold.ttf');
+    src: url('../fonts/Rajdhani-Bold.ttf') format('embedded-opentype'),
+         url('../fonts/Rajdhani-Bold.ttf') format('woff'),
+         url('../fonts/Rajdhani-Bold.ttf') format('truetype'),
+         url('../fonts/Rajdhani-Bold.ttf') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
