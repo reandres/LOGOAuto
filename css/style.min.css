@@ -1,3 +1,44 @@
+@media (max-width: 1200px) {
+  body .header__logo {
+    margin-right: 40px;
+    font-size: 20px;
+  }
+  body .header__menu__link {
+    font-size: 13px;
+  }
+  body .header__link {
+    margin-left: 0;
+  }
+  body .banner__text {
+    padding-top: 30px;
+  }
+  body .banner__circle {
+    left: 260px;
+  }
+  body .competitions__wrapper .item {
+    width: 230px;
+    height: 277px;
+  }
+  body .competitions__wrapper .item__descr {
+    font-size: 16px;
+  }
+  body .competitions__wrapper .item__button {
+    left: 83%;
+  }
+  body .reviews__review {
+    width: 1280px;
+  }
+  body .reviews__picture {
+    display: none;
+  }
+  body .latest__wrapper .item_person_with_car {
+    width: 235px;
+  }
+  body .footer__logo {
+    font-size: 20px;
+    margin-right: 170px;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
