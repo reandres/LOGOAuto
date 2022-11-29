@@ -385,4 +385,44 @@
   font-size: 14px;
   line-height: 19px;
   color: #343434;
+}
+
+.footer {
+  margin-top: 100px;
+  min-height: 70px;
+  background: #346CD9;
+}
+.footer__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 368px;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__item {
+  margin-top: 25px;
+  list-style-type: none;
+}
+.footer__item:nth-child(7) {
+  padding-right: 55px;
+}
+.footer__link {
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
 }/*# sourceMappingURL=style.min.css.map */
