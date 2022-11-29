@@ -341,4 +341,48 @@
 .reviews__picture .img {
   width: 640px;
   height: 400px;
+}
+
+.latest {
+  margin-top: 100px;
+  min-height: 367px;
+}
+.latest__header {
+  font-weight: 700;
+  font-size: 36px;
+  color: #343434;
+}
+.latest__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.latest__wrapper .item_person_with_car {
+  width: 270px;
+  height: 288px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.latest__wrapper .item_person_with_car .img {
+  width: 100%;
+}
+.latest__wrapper .item_person_with_car .descr {
+  margin: 20px 0 0 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+}
+.latest__wrapper .item_person_with_car .subdescr {
+  margin: 7px 0 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
 }/*# sourceMappingURL=style.min.css.map */
