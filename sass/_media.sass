@@ -41,3 +41,52 @@
             &__logo
                 font-size: 20px
                 margin-right: 170px
+
+@media (max-width: 991px)
+    body
+        .header
+            &__logo
+                display: block
+                margin: 0 auto
+                margin-bottom: 10px
+                font-size: 30px
+            &__link
+                margin-right: 0
+            &__btn
+                width: 90px
+                
+        .banner
+            &__text
+                padding-top: 435px
+            &__circle
+                left: 0
+                top: 20px
+
+        .competitions
+            &__header
+                text-align: center
+            &__wrapper
+                display: grid
+                grid-template-columns: 1fr 1fr
+                .item
+                    margin-left: 50px
+
+        .latest
+            &__header
+                text-align: center
+            &__wrapper
+                display: grid
+                grid-template-columns: 1fr 1fr
+                gap: 40px
+                .item_person_with_car
+                    margin-left: 50px
+        
+        .footer
+            &__logo
+                font-size: 30px
+            &__menu
+                margin: -17px 0 0 35px
+            &__link
+                padding-right: 25px
+                font-size: 15px
+

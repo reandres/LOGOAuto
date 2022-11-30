@@ -39,6 +39,58 @@
     margin-right: 170px;
   }
 }
+@media (max-width: 991px) {
+  body .header__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  body .header__link {
+    margin-right: 0;
+  }
+  body .header__btn {
+    width: 90px;
+  }
+  body .banner__text {
+    padding-top: 435px;
+  }
+  body .banner__circle {
+    left: 0;
+    top: 20px;
+  }
+  body .competitions__header {
+    text-align: center;
+  }
+  body .competitions__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body .competitions__wrapper .item {
+    margin-left: 50px;
+  }
+  body .latest__header {
+    text-align: center;
+  }
+  body .latest__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  body .latest__wrapper .item_person_with_car {
+    margin-left: 50px;
+  }
+  body .footer__logo {
+    font-size: 30px;
+  }
+  body .footer__menu {
+    margin: -17px 0 0 35px;
+  }
+  body .footer__link {
+    padding-right: 25px;
+    font-size: 15px;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -150,7 +202,7 @@
   margin-top: 100px;
   min-height: 362px;
 }
-.competitions__text {
+.competitions__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 46px;
