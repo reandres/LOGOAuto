@@ -12,6 +12,9 @@
     max-width: 1280px
     margin: 0 auto
 
+.hamburger
+    display: none
+
 .header
     margin: 0 auto
     margin-top: 30px
@@ -226,20 +229,25 @@
     justify-content: center
     margin-top: 100px
     height: 400px
-    &__review
+    &__inner
         display: inline-block
-        width: 640px
+        width: 1280px
         height: 400px
         background: rgba(52, 108, 217, 0.12)
-    &__descr
+    &__flex
+        display: flex
+    &__item
         margin: 0 auto
         margin-top: 73px
-        width: 400px
+        width: 640px
         font-weight: 600
         font-size: 20px
         line-height: 30px
         text-align: center
         color: #343434
+    &__descr
+        margin: 0 auto
+        width: 400px    
     &__name
         margin-top: 30px
         font-weight: 400
@@ -247,24 +255,30 @@
         text-align: center
         text-transform: uppercase
         color: #343434
-    &__dots
-        display: flex
-        justify-content: center
-        align-items: center
-        .dot
-            margin: 40px 7px 0  0
-            list-style-type: none
-            width: 10px
-            height: 10px
-            background: rgba(255, 46, 99, 0.33)
-            border-radius: 100%
-            &:nth-last-child(3)
-                background: #FF2E63
+        margin-bottom: 40px
     &__picture
         display: inline-block 
         .img
             width: 640px
             height: 400px
+
+    .slick-dots
+        display: flex
+        justify-content: center
+        transform: translate(-320px, -100px)
+
+        li
+            list-style-type: none  
+        button
+            margin-right: 15px
+            height: 10px
+            width: 10px
+            font-size: 0
+            border-radius: 100%
+            border: none
+            background: rgba(255, 46, 99, 0.33)
+            &:focus
+                background: #FF2E63
 
 .latest
     margin-top: 100px
