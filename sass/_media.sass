@@ -1,31 +1,31 @@
 @media (max-width: 1200px)
     body
+        .container
+            padding: 0 30px
         .header 
             &__logo
-                margin-right: 40px
-                font-size: 20px
-            &__menu
-                &__link
-                    font-size: 13px
+                margin-right: 40px          
             &__link
                 margin-left: 0
         
         .banner
-            &__text
-                padding-top: 30px
+            padding-top: 0
             &__circle
-                left: 260px
+                top: 60px
+                left: 200px
         
         .competitions
             &__wrapper
+                display: flex
+                flex-wrap: wrap
                 .item
-                    width: 230px
-                    height: 277px
-                    &__descr
-                        font-size: 16px
-                    &__button
-                        left: 83%
+                    &:nth-child(1)
+                        margin-bottom: 50px
         
+        .how
+            &__wrapper
+                .descr
+                    font-size: 15px            
         .reviews
             &__review
                 width: 1280px
@@ -34,13 +34,19 @@
         
         .latest
             &__wrapper
+                display: flex
+                flex-wrap: wrap
                 .item_person_with_car
-                    width: 235px
+                    &:nth-child(1)
+                        margin-bottom: 50px
         
         .footer
+            .container
+                display: flex
             &__logo
-                font-size: 20px
-                margin-right: 170px
+                margin-right: 90px
+            &__link
+                font-size: 13px
 
 @media (max-width: 991px)
     body
@@ -93,13 +99,8 @@
 
 
 @media (max-width: 767px)
-    body
-        
-        
+    body 
         .banner
-            &__circle
-                width: 570px
-                height: 300px
             &__text
                 margin-left: 10px
             &__btn

@@ -5,7 +5,15 @@ $(document).ready(function(){
         arrows: false,
         dots: true,
         variableWidth: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });
   
