@@ -4,34 +4,64 @@
             padding: 0 30px
         .header 
             &__logo
-                margin-right: 40px          
-            &__link
-                margin-left: 0
-        
+                margin-right: 80px  
+            &__menu
+                &__item
+                    margin-right: 15px
+                    &:nth-child(6)
+                        margin-right: 25px
+                &__link
+                    font-size: 13px
+                    &:hover
+                        color: $black
+            &__btn_login
+                margin-right: 15px
+                &:hover
+                    color: $red               
+            &__btn
+                width: 85px
+                &:hover
+                    background: $red
+                  
         .banner
             padding-top: 0
+            &__btn
+                &:hover
+                    background: $blue
             &__circle
                 top: 60px
-                left: 200px
+                right: 0
         
         .competitions
             &__wrapper
                 display: flex
                 flex-wrap: wrap
                 .item
+                    width: 30%
+                    &__button
+                        left: 86%
+                        &:hover
+                            background: $blue
                     &:nth-child(1)
                         margin-bottom: 50px
+                    &:nth-child(4)
+                        margin-left: 0
         
         .how
             &__wrapper
                 .descr
                     font-size: 15px            
         .reviews
-            &__review
-                width: 1280px
+            .container
+                width: 100%
+            &__item           
+                width: 100%              
             &__picture
                 display: none
-        
+            .slick-dots
+                left: 51%
+                bottom: 0%
+                transform: translate(-51%, -0%)
         .latest
             &__wrapper
                 display: flex
@@ -40,11 +70,23 @@
                     &:nth-child(1)
                         margin-bottom: 50px
         
+        .reviews
+           .slick-dots
+                left: 51%
+                bottom: 15%
+                transform: translate(-51%, -15%) 
+
+        .latest
+            &__wrapper
+                .item_person_with_car
+                    width: 30%
+                    &:nth-child(4)
+                        margin-left: 0
         .footer
             .container
                 display: flex
             &__logo
-                margin-right: 90px
+                padding-right: 140px
             &__link
                 font-size: 13px
 

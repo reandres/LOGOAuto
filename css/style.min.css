@@ -3,17 +3,41 @@
     padding: 0 30px;
   }
   body .header__logo {
-    margin-right: 40px;
+    margin-right: 80px;
   }
-  body .header__link {
-    margin-left: 0;
+  body .header__menu__item {
+    margin-right: 15px;
+  }
+  body .header__menu__item:nth-child(6) {
+    margin-right: 25px;
+  }
+  body .header__menu__link {
+    font-size: 13px;
+  }
+  body .header__menu__link:hover {
+    color: #252A34;
+  }
+  body .header__btn_login {
+    margin-right: 15px;
+  }
+  body .header__btn_login:hover {
+    color: #FF2E63;
+  }
+  body .header__btn {
+    width: 85px;
+  }
+  body .header__btn:hover {
+    background: #FF2E63;
   }
   body .banner {
     padding-top: 0;
   }
+  body .banner__btn:hover {
+    background: #346CD9;
+  }
   body .banner__circle {
     top: 60px;
-    left: 200px;
+    right: 0;
   }
   body .competitions__wrapper {
     display: -webkit-box;
@@ -22,17 +46,38 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  body .competitions__wrapper .item {
+    width: 30%;
+  }
+  body .competitions__wrapper .item__button {
+    left: 86%;
+  }
+  body .competitions__wrapper .item__button:hover {
+    background: #346CD9;
+  }
   body .competitions__wrapper .item:nth-child(1) {
     margin-bottom: 50px;
+  }
+  body .competitions__wrapper .item:nth-child(4) {
+    margin-left: 0;
   }
   body .how__wrapper .descr {
     font-size: 15px;
   }
-  body .reviews__review {
-    width: 1280px;
+  body .reviews .container {
+    width: 100%;
+  }
+  body .reviews__item {
+    width: 100%;
   }
   body .reviews__picture {
     display: none;
+  }
+  body .reviews .slick-dots {
+    left: 51%;
+    bottom: 0%;
+    -webkit-transform: translate(-51%, 0%);
+            transform: translate(-51%, 0%);
   }
   body .latest__wrapper {
     display: -webkit-box;
@@ -44,13 +89,25 @@
   body .latest__wrapper .item_person_with_car:nth-child(1) {
     margin-bottom: 50px;
   }
+  body .reviews .slick-dots {
+    left: 51%;
+    bottom: 15%;
+    -webkit-transform: translate(-51%, -15%);
+            transform: translate(-51%, -15%);
+  }
+  body .latest__wrapper .item_person_with_car {
+    width: 30%;
+  }
+  body .latest__wrapper .item_person_with_car:nth-child(4) {
+    margin-left: 0;
+  }
   body .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   body .footer__logo {
-    margin-right: 90px;
+    padding-right: 140px;
   }
   body .footer__link {
     font-size: 13px;
@@ -179,21 +236,14 @@
 
 .container {
   position: relative;
-  max-width: 1280px;
+  max-width: 1170px;
   margin: 0 auto;
-}
-
-.hamburger {
-  display: none;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 30px 0 37px 0;
   min-height: 40px;
 }
@@ -203,7 +253,7 @@
   display: flex;
 }
 .header__logo {
-  margin-right: 210px;
+  margin-right: 108px;
   font-size: 30px;
   color: #252A34;
   font-weight: 700;
@@ -217,22 +267,21 @@
   color: #FF2E63;
 }
 .header__menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .header__menu__item {
   margin: 13px 30px 0 0;
   list-style-type: none;
 }
 .header__menu__item:nth-child(6) {
-  margin-right: 100px;
+  margin-right: 99px;
 }
 .header__menu__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -243,7 +292,9 @@
   color: #FF2E63;
 }
 .header__wrapper_btn {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .header__btn_login {
   margin-right: 30px;
@@ -261,7 +312,7 @@
 }
 .header__btn {
   width: 110px;
-  min-height: 40px;
+  height: 40px;
   font-size: 16px;
   background: #FF2E63;
   border-radius: 5px;
@@ -304,7 +355,7 @@
 .banner__circle {
   position: absolute;
   top: -100px;
-  left: 525px;
+  right: -40px;
   width: 100%;
   width: 755px;
   height: 400px;
@@ -328,29 +379,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
 }
 .competitions__wrapper .item {
   position: relative;
-  width: 270px;
+  margin: 0 15px;
+  width: 25%;
   height: 283px;
   background: #ffffff;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+.competitions__wrapper .item:nth-child(1) {
+  margin-left: 0;
+}
+.competitions__wrapper .item:nth-child(4) {
+  margin-right: 0;
+}
 .competitions__wrapper .item__img {
   margin-bottom: 20px;
-  width: 270px;
   height: 160px;
 }
 .competitions__wrapper .item img {
   width: 100%;
 }
 .competitions__wrapper .item__descr {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 20px;
   margin-bottom: 5px;
   font-weight: 700;
@@ -504,15 +561,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 400px;
   margin-bottom: 100px;
 }
 .reviews__inner {
-  display: inline-block;
-  width: 1280px;
+  width: 100%;
   height: 400px;
   background: rgba(52, 108, 217, 0.12);
 }
@@ -520,11 +572,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 .reviews__item {
   margin: 0 auto;
-  margin-top: 73px;
-  width: 640px;
+  padding-top: 73px;
+  width: 50%;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -533,7 +586,7 @@
 }
 .reviews__descr {
   margin: 0 auto;
-  width: 400px;
+  max-width: 400px;
 }
 .reviews__name {
   margin-top: 30px;
@@ -545,24 +598,30 @@
   margin-bottom: 40px;
 }
 .reviews__picture {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
 }
 .reviews__picture .img {
-  width: 640px;
+  width: 100%;
   height: 400px;
 }
 .reviews__picture img {
   width: 100%;
 }
 .reviews .slick-dots {
+  position: absolute;
+  left: 24%;
+  bottom: 17%;
+  -webkit-transform: translate(-24%, -17%);
+          transform: translate(-24%, -17%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translate(-320px, -100px);
-          transform: translate(-320px, -100px);
 }
 .reviews .slick-dots li {
   list-style-type: none;
@@ -575,6 +634,7 @@
   border-radius: 100%;
   border: none;
   background: rgba(255, 46, 99, 0.33);
+  cursor: pointer;
 }
 .reviews .slick-dots button:focus {
   background: #FF2E63;
@@ -594,21 +654,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
 }
 .latest__wrapper .item_person_with_car {
-  width: 270px;
+  margin: 0 15px;
+  width: 25%;
   height: 288px;
   background: #ffffff;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+.latest__wrapper .item_person_with_car:nth-child(1) {
+  margin-left: 0;
+}
+.latest__wrapper .item_person_with_car:nth-child(4) {
+  margin-right: 0;
+}
 .latest__wrapper .item_person_with_car .img {
   margin-bottom: 20px;
-  width: 270px;
+  width: 100%;
   height: 200px;
 }
 .latest__wrapper .item_person_with_car img {
@@ -634,12 +699,16 @@
   min-height: 70px;
   background: #346CD9;
 }
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .footer__logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 368px;
-  padding: 16px;
+  padding: 16px 343px 0 0;
   font-weight: 700;
   font-size: 30px;
   letter-spacing: 0.05em;
@@ -655,16 +724,21 @@
           justify-content: space-between;
 }
 .footer__item {
-  margin-top: 25px;
+  padding: 25px 30px 0 0;
   list-style-type: none;
 }
-.footer__item:nth-child(7) {
-  padding-right: 55px;
+.footer__item:nth-child(6) {
+  padding-right: 0;
 }
 .footer__link {
-  padding-right: 30px;
   font-weight: 600;
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
+}
+.footer__link:nth-child(5) {
+  padding-right: 0;
+}
+.footer__link:hover {
+  color: #b1b1b1;
 }/*# sourceMappingURL=style.min.css.map */
