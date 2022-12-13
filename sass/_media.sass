@@ -7,7 +7,7 @@
                 margin-right: 80px  
             &__menu
                 &__item
-                    margin-right: 15px
+                    margin-right: 16px
                     &:nth-child(6)
                         margin-right: 25px
                 &__link
@@ -36,21 +36,21 @@
             &__wrapper
                 display: flex
                 flex-wrap: wrap
+                justify-content: center
                 .item
-                    width: 30%
                     &__button
-                        left: 86%
                         &:hover
                             background: $blue
                     &:nth-child(1)
                         margin-bottom: 50px
                     &:nth-child(4)
-                        margin-left: 0
+                        margin: 0 15px 0 0
         
         .how
             &__wrapper
                 .descr
                     font-size: 15px            
+        
         .reviews
             .container
                 width: 100%
@@ -60,48 +60,70 @@
                 display: none
             .slick-dots
                 left: 51%
-                bottom: 0%
-                transform: translate(-51%, -0%)
+                bottom: 14%
+                transform: translate(-51%, -14%)
+        
         .latest
             &__wrapper
                 display: flex
                 flex-wrap: wrap
+                justify-content: center
                 .item_person_with_car
                     &:nth-child(1)
                         margin-bottom: 50px
-        
-        .reviews
-           .slick-dots
-                left: 51%
-                bottom: 15%
-                transform: translate(-51%, -15%) 
-
-        .latest
-            &__wrapper
-                .item_person_with_car
-                    width: 30%
                     &:nth-child(4)
-                        margin-left: 0
+                        margin: 0 15px 0 0
+               
         .footer
             .container
                 display: flex
+                justify-content: space-between
             &__logo
-                padding-right: 140px
-            &__link
-                font-size: 13px
+                padding-right: 105px
+            
 
 @media (max-width: 991px)
     body
         .header
+            position: relative           
+            .container
+                flex-direction: column
             &__logo
-                display: block
-                margin: 0 auto
                 margin-bottom: 10px
                 font-size: 30px
-            &__link
+            &__menu
+                &__item
+                    margin-bottom: 30px
+                    &:nth-child(6)
+                        margin-bottom: 40px
+                &__link
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 27px
+            &__menu,
+            &__wrapper_btn
+                position: absolute
+                flex-direction: column
+                width: 100%
+                padding: 20px 15px
+                right: -100%
+                transition: 0.6s all
+                &_active
+                    right: 0
+                    transition: 0.6s all
+            &__wrapper_btn
+                flex-direction: row
+                padding: 0 16px
+            &__btn_login
                 margin-right: 0
+                order: 2
             &__btn
-                width: 90px
+                margin-right: 30px
+                width: 110px
+                height: 40px
+                order: 1
+            
+                
                 
         .banner
             &__text
@@ -115,43 +137,10 @@
             &__header
                 text-align: center
             &__wrapper
-                display: grid
-                grid-template-columns: 1fr 1fr
                 .item
-                    margin-left: 50px
-
-        .latest
-            &__header
-                text-align: center
-            &__wrapper
-                display: grid
-                grid-template-columns: 1fr 1fr
-                gap: 40px
-                .item_person_with_car
-                    margin-left: 50px
+                    &:nth-child(3)
+                        margin: 0 30px 0 0
         
-        .footer
-            &__logo
-                font-size: 30px
-            &__menu
-                margin: -17px 0 0 35px
-            &__link
-                padding-right: 25px
-                font-size: 15px
-
-
-@media (max-width: 767px)
-    body 
-        .banner
-            &__text
-                margin-left: 10px
-            &__btn
-                margin-left: 10px
-
-        .competitions
-            &__wrapper
-                .item
-                    margin-left: 35px 
         .how
             &__wrapper
                 display: flex
@@ -159,6 +148,8 @@
                 align-items: center
                 .item
                     margin-bottom: 160px
+                    &:nth-child(7)
+                        margin-bottom: 0                     
                 .right
                     transform: rotate(90deg)
                     &::before
@@ -168,19 +159,30 @@
                         content: ''
                         margin: -25px 0 0 -40px
                         bottom: -3px
+
         .latest
+            &__header
+                text-align: center
             &__wrapper
-                gap:15px  
                 .item_person_with_car
-                    margin-left: 30px  
+                    &:nth-child(3)
+                        margin: 0 30px 0 0
         
         .footer
-            &__menu    
+            .container
                 display: flex
                 flex-direction: column
-            &__link
-                font-size: 18px
-    
+            &__menu
+                display: flex
+                flex-direction: column
+            &__item
+                &:nth-child(6)
+                   padding-bottom: 10px
+                    
+            
+
+
+
         
       
 
