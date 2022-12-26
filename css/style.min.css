@@ -39,6 +39,9 @@
     top: 60px;
     right: 0;
   }
+  body .competitions__header {
+    text-align: center;
+  }
   body .competitions__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -52,11 +55,8 @@
   body .competitions__wrapper .item__button:hover {
     background: #346CD9;
   }
-  body .competitions__wrapper .item:nth-child(1) {
-    margin-bottom: 50px;
-  }
   body .competitions__wrapper .item:nth-child(4) {
-    margin: 0 15px 0 0;
+    margin: 50px 15px 0 0;
   }
   body .how__wrapper .descr {
     font-size: 15px;
@@ -76,6 +76,9 @@
     -webkit-transform: translate(-51%, -14%);
             transform: translate(-51%, -14%);
   }
+  body .latest__header {
+    text-align: center;
+  }
   body .latest__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,11 +89,8 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .latest__wrapper .item_person_with_car:nth-child(1) {
-    margin-bottom: 50px;
-  }
   body .latest__wrapper .item_person_with_car:nth-child(4) {
-    margin: 0 15px 0 0;
+    margin: 50px 15px 0 0;
   }
   body .footer .container {
     display: -webkit-box;
@@ -193,23 +193,29 @@
     left: -100%;
     -webkit-transition: 0.6s all;
     transition: 0.6s all;
+    transition: 0.6s all;
+    z-index: 1;
+    background-color: #ffffff;
   }
   body .header__wrapper_mobile_active {
     position: absolute;
     left: 0;
-    top: -30px;
+    top: 0;
     z-index: 1;
     background-color: #ffffff;
     width: 100%;
     -webkit-transition: 0.6s all;
     transition: 0.6s all;
   }
-  body .header__wrapper_mobile_active .red {
+  body .header__wrapper_mobile_active::before {
+    content: "";
     padding: 10px 18px;
-    height: 70px;
+    height: 75px;
     width: 100%;
     background-color: #FF2E63;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   body .header_active .header__logo {
     color: #ffffff;
@@ -271,8 +277,11 @@
   body .competitions__header {
     text-align: center;
   }
+  body .competitions__wrapper .item {
+    width: 32%;
+  }
   body .competitions__wrapper .item:nth-child(3) {
-    margin: 0 30px 0 0;
+    margin: 50px 30px 0 0;
   }
   body .how__wrapper {
     display: -webkit-box;
@@ -303,13 +312,16 @@
   body .how__wrapper .right::after {
     content: "";
     margin: -25px 0 0 -40px;
-    bottom: -3px;
+    bottom: -6px;
   }
   body .latest__header {
     text-align: center;
   }
+  body .latest__wrapper .item_person_with_car {
+    width: 32%;
+  }
   body .latest__wrapper .item_person_with_car:nth-child(3) {
-    margin: 0 30px 0 0;
+    margin: 50px 30px 0 0;
   }
   body .footer .container {
     display: -webkit-box;
@@ -337,6 +349,73 @@
   }
   body .footer__item:nth-child(6) {
     padding-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  body .banner__circle {
+    right: -50px;
+  }
+  body .competitions__wrapper .item {
+    width: 39%;
+  }
+  body .latest__wrapper .item_person_with_car {
+    width: 39%;
+  }
+}
+@media (max-width: 644px) {
+  body .banner__circle {
+    right: 0;
+  }
+  body .competitions .container {
+    padding: 0 0 0 30px;
+  }
+  body .competitions__header {
+    margin-bottom: 30px;
+  }
+  body .competitions__wrapper .item {
+    border-radius: 16px;
+    margin: 0 9px;
+  }
+  body .competitions__wrapper .item__descr {
+    font-size: 25px;
+  }
+  body .competitions__wrapper .item__price {
+    font-size: 35px;
+  }
+  body .competitions__wrapper .item__old_price {
+    font-size: 25px;
+  }
+  body .competitions__wrapper .item__text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  body .competitions__wrapper .item__button {
+    width: 55px;
+    height: 55px;
+  }
+  body .competitions__wrapper .item:nth-child(3) {
+    margin: 0 9px;
+  }
+  body .competitions__wrapper .item:nth-child(4) {
+    margin: 0 9px;
+  }
+  body .latest .container {
+    padding: 0 0 0 30px;
+  }
+  body .latest__wrapper .item_person_with_car {
+    margin: 0 9px;
+  }
+  body .latest__wrapper .item_person_with_car .descr {
+    font-size: 25px;
+  }
+  body .latest__wrapper .item_person_with_car .subdescr {
+    font-size: 20px;
+  }
+  body .latest__wrapper .item_person_with_car:nth-child(3) {
+    margin: 0 9px;
+  }
+  body .latest__wrapper .item_person_with_car:nth-child(4) {
+    margin: 0 9px;
   }
 }
 * {
@@ -399,16 +478,17 @@
   display: flex;
 }
 .header__menu__item {
-  padding: 13px 15px 0 15px;
+  padding: 10px 16px 0 16px;
   list-style-type: none;
 }
 .header__menu__item:nth-child(6) {
-  padding-right: 84px;
+  padding-right: 106px;
 }
 .header__menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "OpenSans-Regular";
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -424,6 +504,7 @@
   display: flex;
 }
 .header__btn_login {
+  font-family: "OpenSans-Regular";
   margin-right: 30px;
   font-weight: 600;
   font-size: 16px;
@@ -438,6 +519,8 @@
   color: #252A34;
 }
 .header__btn {
+  font-family: "OpenSans-Regular";
+  font-weight: 600;
   width: 110px;
   height: 40px;
   font-size: 16px;
@@ -457,7 +540,7 @@
   margin-bottom: 100px;
 }
 .banner__text {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
@@ -471,6 +554,7 @@
   background: #346CD9;
   border-radius: 5px;
   border: none;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
@@ -482,7 +566,7 @@
 .banner__circle {
   position: absolute;
   top: -100px;
-  right: -40px;
+  right: -50px;
   width: 100%;
   width: 755px;
   height: 400px;
@@ -496,7 +580,7 @@
   margin-bottom: 100px;
 }
 .competitions__header {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 36px;
   line-height: 46px;
@@ -511,8 +595,8 @@
 .competitions__wrapper .item {
   position: relative;
   margin: 0 15px;
-  height: 283px;
-  min-width: 270px;
+  min-height: 283px;
+  width: 25%;
   background: #ffffff;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
@@ -525,7 +609,7 @@
   margin-right: 0;
 }
 .competitions__wrapper .item__img {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   min-height: 160px;
 }
 .competitions__wrapper .item img {
@@ -536,9 +620,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
 }
 .competitions__wrapper .item__price {
   display: inline-block;
@@ -553,10 +637,11 @@
   font-size: 20px;
   text-decoration: line-through;
   color: #999999;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 .competitions__wrapper .item__text {
   margin-left: 20px;
+  font-family: "OpenSans-Regular";
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -617,7 +702,7 @@
   font-size: 36px;
   text-align: center;
   color: #343434;
-  margin-bottom: 60px;
+  margin-bottom: 53px;
 }
 .how__wrapper {
   display: -webkit-box;
@@ -643,6 +728,7 @@
 .how__wrapper .descr {
   margin-top: 30px;
   margin-bottom: 100px;
+  font-family: "OpenSans-Regular";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -651,6 +737,7 @@
 }
 .how__wrapper .descr span {
   color: #343434;
+  font-family: "Open Sans";
   font-weight: 600;
 }
 .how__wrapper .right {
@@ -667,17 +754,18 @@
 }
 .how__wrapper .right::before {
   content: "";
-  width: 25px;
+  width: 33px;
   height: 3px;
   background-color: #585858;
   top: 30px;
+  left: 7px;
 }
 .how__wrapper .right::after {
   content: "";
-  left: 13px;
-  bottom: -28px;
-  width: 10px;
-  height: 10px;
+  left: 21px;
+  bottom: -31px;
+  width: 15px;
+  height: 16px;
   border-top: 3px solid #585858;
   border-left: 3px solid #585858;
   -webkit-transform: rotate(135deg);
@@ -713,10 +801,12 @@
 }
 .reviews__descr {
   margin: 0 auto;
+  font-family: "OpenSans-Regular";
   max-width: 400px;
+  margin-bottom: 22px;
 }
 .reviews__name {
-  margin-top: 30px;
+  font-family: "OpenSans-Regular";
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -740,9 +830,9 @@
 .reviews .slick-dots {
   position: absolute;
   left: 24%;
-  bottom: 17%;
-  -webkit-transform: translate(-24%, -17%);
-          transform: translate(-24%, -17%);
+  bottom: 20%;
+  -webkit-transform: translate(-24%, -20%);
+          transform: translate(-24%, -20%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,7 +865,7 @@
   font-weight: 700;
   font-size: 36px;
   color: #343434;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .latest__wrapper {
   display: -webkit-box;
@@ -785,8 +875,8 @@
 }
 .latest__wrapper .item_person_with_car {
   margin: 0 15px;
-  height: 288px;
-  min-width: 270px;
+  min-height: 288px;
+  width: 25%;
   background: #ffffff;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
@@ -801,13 +891,13 @@
 .latest__wrapper .item_person_with_car .img {
   margin-bottom: 20px;
   width: 100%;
-  height: 200px;
 }
 .latest__wrapper .item_person_with_car img {
+  height: 200px;
   width: 100%;
 }
 .latest__wrapper .item_person_with_car .descr {
-  margin-bottom: 7px;
+  margin-bottom: 4px;
   margin-left: 20px;
   font-weight: 700;
   font-size: 20px;
@@ -817,6 +907,7 @@
 .latest__wrapper .item_person_with_car .subdescr {
   margin-left: 20px;
   font-weight: 400;
+  font-family: "OpenSans-Regular";
   font-size: 14px;
   line-height: 19px;
   color: #343434;
@@ -835,7 +926,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 16px 343px 0 0;
+  padding: 16px 388px 0 0;
   font-weight: 700;
   font-size: 30px;
   letter-spacing: 0.05em;
@@ -851,7 +942,7 @@
           justify-content: space-between;
 }
 .footer__item {
-  padding: 25px 15px 0 15px;
+  padding: 25px 16px 0 16px;
   list-style-type: none;
 }
 .footer__item:nth-child(1) {
@@ -861,8 +952,9 @@
   padding-right: 0;
 }
 .footer__link {
+  font-family: "Open Sans";
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: #ffffff;
   text-decoration: none;
 }

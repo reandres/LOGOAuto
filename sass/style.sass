@@ -42,12 +42,13 @@
     &__menu
         display: flex
         &__item
-            padding: 13px 15px 0 15px
+            padding: 10px 16px 0 16px
             list-style-type: none
             &:nth-child(6)
-                padding-right: 84px
+                padding-right: 106px
         &__link
             display: flex
+            font-family: 'OpenSans-Regular'
             font-weight: 600
             font-size: 14px
             line-height: 19px
@@ -58,6 +59,7 @@
     &__wrapper_btn 
         display: flex            
     &__btn_login
+        font-family: 'OpenSans-Regular'
         margin-right: 30px
         font-weight: 600
         font-size: 16px
@@ -70,6 +72,8 @@
         &:hover
             color: $black
     &__btn
+        font-family: 'OpenSans-Regular'
+        font-weight: 600
         width: 110px
         height: 40px
         font-size: 16px
@@ -86,7 +90,7 @@
     padding: 95px 0 110px 0
     margin-bottom: 100px
     &__text
-        margin-bottom: 50px
+        margin-bottom: 35px
         font-weight: 700
         font-size: 50px
         line-height: 60px
@@ -98,6 +102,7 @@
         background: $blue
         border-radius: 5px
         border: none
+        font-family: 'Open Sans'
         font-weight: 600
         font-size: 16px
         color: $white
@@ -107,7 +112,7 @@
     &__circle
         position: absolute
         top: -100px
-        right: -40px
+        right: -50px
         width: 100%
         width: 755px
         height: 400px
@@ -119,7 +124,7 @@
     min-height: 362px
     margin-bottom: 100px
     &__header
-        margin-bottom: 60px
+        margin-bottom: 35px
         font-weight: 700
         font-size: 36px
         line-height: 46px
@@ -130,8 +135,8 @@
         .item
             position: relative
             margin: 0 15px
-            height: 283px
-            min-width: 270px
+            min-height: 283px
+            width: 25%
             background: $white
             box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15)
             border-radius: 10px
@@ -140,16 +145,16 @@
             &:nth-child(4)
                 margin-right: 0  
             &__img
-                margin-bottom: 20px
+                margin-bottom: 14px
                 min-height: 160px
             img
                 width: 100%
             &__descr
                 display: flex
                 margin-left: 20px
-                margin-bottom: 5px
+                margin-bottom: 1px
                 font-weight: 700
-                font-size: 18px
+                font-size: 20px
             &__price
                 display: inline-block
                 margin-left: 20px
@@ -162,9 +167,10 @@
                 font-size: 20px
                 text-decoration: line-through
                 color: #999999
-                margin-bottom: 15px
+                margin-bottom: 9px
             &__text
                 margin-left: 20px
+                font-family: 'OpenSans-Regular'
                 font-weight: 400
                 font-size: 14px
                 line-height: 19px
@@ -214,7 +220,7 @@
         font-size: 36px
         text-align: center
         color: #343434  
-        margin-bottom: 60px
+        margin-bottom: 53px
     &__wrapper
         display: flex
         justify-content: space-between
@@ -231,6 +237,7 @@
         .descr
             margin-top: 30px
             margin-bottom: 100px
+            font-family: 'OpenSans-Regular'
             font-weight: 400
             font-size: 16px
             line-height: 22px
@@ -238,6 +245,7 @@
             color: #343434
             span
                 color: $grey
+                font-family: 'Open Sans'
                 font-weight: 600
         .right
             width: 45px
@@ -249,16 +257,17 @@
                 position: absolute
             &::before
                 content: ''
-                width: 25px
+                width: 33px
                 height: 3px
                 background-color: #585858  
                 top: 30px
+                left: 7px
             &::after
                 content: ''
-                left: 13px
-                bottom: -28px
-                width: 10px
-                height: 10px
+                left: 21px
+                bottom: -31px
+                width: 15px
+                height: 16px
                 border-top: 3px solid #585858 
                 border-left: 3px solid #585858      
                 transform: rotate(135deg)
@@ -284,9 +293,11 @@
         color: $grey
     &__descr
         margin: 0 auto 
+        font-family: 'OpenSans-Regular'
         max-width: 400px 
+        margin-bottom: 22px
     &__name
-        margin-top: 30px
+        font-family: 'OpenSans-Regular'
         font-weight: 400
         font-size: 16px
         text-align: center
@@ -304,8 +315,8 @@
     .slick-dots
         position: absolute
         left: 24%
-        bottom: 17%
-        transform: translate(-24%, -17%)
+        bottom: 20%
+        transform: translate(-24%, -20%)
         display: flex
         justify-content: center
         li
@@ -329,14 +340,14 @@
         font-weight: 700
         font-size: 36px
         color: $grey
-        margin-bottom: 40px
+        margin-bottom: 32px
     &__wrapper
         display: flex
         width: 100%
         .item_person_with_car
             margin: 0 15px
-            height: 288px
-            min-width: 270px
+            min-height: 288px
+            width: 25%
             background: $white
             box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15)
             border-radius: 10px
@@ -347,11 +358,11 @@
             .img
                 margin-bottom: 20px
                 width: 100%
-                height: 200px
             img
+                height: 200px
                 width: 100%
             .descr
-                margin-bottom: 7px
+                margin-bottom: 4px
                 margin-left: 20px
                 font-weight: 700
                 font-size: 20px
@@ -360,6 +371,7 @@
             .subdescr
                 margin-left: 20px
                 font-weight: 400
+                font-family: 'OpenSans-Regular'
                 font-size: 14px
                 line-height: 19px
                 color: #343434
@@ -371,7 +383,7 @@
         display: flex
     &__logo
         display: inline-flex
-        padding: 16px 343px 0 0
+        padding: 16px 388px 0 0
         font-weight: 700
         font-size: 30px
         letter-spacing: 0.05em
@@ -381,15 +393,16 @@
         display: flex
         justify-content: space-between
     &__item  
-        padding: 25px 15px 0 15px
+        padding: 25px 16px 0 16px
         list-style-type: none
         &:nth-child(1)
             padding-left: 0
         &:nth-child(6)
             padding-right: 0         
     &__link
+        font-family: 'Open Sans'
         font-weight: 600
-        font-size: 14px
+        font-size: 15px
         color: $white
         text-decoration: none
         &:nth-child(5)

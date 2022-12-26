@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'OpenSans_SemiCondensed-Bold';
+    font-family: 'Open Sans';
     src: url('../fonts/OpenSans_SemiCondensed-Bold.ttf');
     src: url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('embedded-opentype'),
          url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('woff'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'Rajdhani-Bold';
+    font-family: 'Rajdhani';
     src: url('../fonts/Rajdhani-Bold.ttf');
     src: url('../fonts/Rajdhani-Bold.ttf') format('embedded-opentype'),
          url('../fonts/Rajdhani-Bold.ttf') format('woff'),
