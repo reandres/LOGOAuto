@@ -85,6 +85,9 @@
 
 @media (max-width: 991px)
     body
+        .body  
+            &_active
+                overflow: hidden 
         .hamburger_menu
             display: flex
             flex-direction: column
@@ -140,26 +143,25 @@
                 flex-direction: column
                 position: absolute
                 left: -100%
-                transition: 0.6s all   
-                transition: 0.6s all              
+                transition: 0.6s all             
                 z-index: 1
                 background-color: $white
+                height: 100vh
+                &::before
+                    content: ''
+                    padding: 10px 18px
+                    height: 75px
+                    background-color: $red
+                    margin-bottom: 40px   
+                    transform: translateY(-30px)           
                 &_active
                     position: absolute
                     left: 0
                     top: 0
                     z-index: 1
                     background-color: $white
-                    width: 100%
-                    transition: 0.6s all  
-                    &::before
-                        content: ''
-                        padding: 10px 18px
-                        height: 75px
-                        width: 100%
-                        background-color: $red
-                        margin-bottom: 40px   
-                        transform: translateY(-30px)           
+                    width: 100%                   
+                    transition: 0.6s all                    
             &_active
                 .header__logo
                     color: $white
@@ -192,17 +194,25 @@
                 order: 1               
                 
         .banner
+            display: flex
+            flex-direction: column
+            padding: 0
+            .container
+                margin: 0
             &__text
                 padding-top: 60px
             &__circle
-                top: 300px
+                margin-bottom: 40px         
+                position: static
+                width: 100%
+                max-width: 100%
 
         .competitions
-            margin-top: 400px
             &__header
                 text-align: center
             &__wrapper
                 .item
+                    min-height: 300px
                     width: 32%
                     &:nth-child(3)
                         margin: 50px 30px 0 0
@@ -225,7 +235,9 @@
                         content: ''
                         margin: -25px 0 0 -40px
                         bottom: -6px
-
+        .reviews
+            .container
+                padding: 0
         .latest
             &__header
                 text-align: center
@@ -269,14 +281,19 @@
     body
         .banner
             &__circle
+                margin-bottom: 0
                 right: 0
                 
         .competitions
+            .slick-track
+                padding-left: 103px
             .container
                 padding: 0 0 0 30px
             &__header
+                text-align: left
                 margin-bottom: 30px
             &__wrapper
+                height: 440px
                 .item
                     border-radius: 16px
                     margin: 0 9px
@@ -299,7 +316,12 @@
         .latest
             .container
                 padding: 0 0 0 30px
+                .slick-track
+                    padding-left: 103px
+            &__header
+                text-align: left
             &__wrapper
+                height: 460px
                 .item_person_with_car
                     .descr
                         font-size: 25px
@@ -310,6 +332,112 @@
                         margin: 0 9px
                     &:nth-child(4)
                         margin: 0 9px
+
+@media (max-width: 575px)
+    body
+        .banner
+            &__btn
+                margin-bottom: 50px
+            &__circle
+                margin-bottom: -200px
+        
+        .competitions
+            margin-bottom: 60px
+
+@media (max-width: 475px)
+    body
+        .competitions 
+            .slick-track
+                padding-left: 90px
+        .latest
+            .container 
+                .slick-track
+                    padding-left: 90px
+
+@media (max-width: 425px)
+    body
+        .container
+            padding: 0 15px
+        .header
+            .hamburger_menu
+                margin-top: 10px
+                width: 24px
+                height: 24px
+                span
+                    margin: 1px 0
+                    width: 16px
+                    height: 3px 
+                    &:nth-child(1)
+                        margin-top: 2px
+                &_active
+                    margin-top: 10px
+                    span
+                        &:nth-child(3)
+                            top: 8px
+            
+        .banner
+            &__text
+                font-size: 35px
+
+        .competitions 
+            margin-bottom: -70px
+            .container
+                padding-left: 5px
+            &__header
+                padding-left: 10px
+            .slick-track
+                padding-left: 70px
+            &__wrapper
+                .item
+                    min-height: 0px
+                    &__descr
+                        font-size: 20px
+                    &__price
+                        font-size: 30px
+                    &__old_price
+                        font-size: 20px
+                    &__text
+                        margin-bottom: 10px
+                        font-size: 15px
+                    &__button
+                        width: 40px
+                        height: 40px
+        .reviews
+            &__descr
+                padding: 0 15px
+                font-size: 17px
+        .latest
+            margin-bottom: -80px
+            .container
+                padding-left: 5px
+                .slick-track
+                    padding-left: 55px 
+            &__header
+                padding-left: 10px  
+            &__wrapper
+                .item_person_with_car
+                    margin: 0 15px
+                    &:nth-child(1)
+                        margin: 0 15px
+                    &:nth-child(2)
+                        margin: 0 15px
+                    &:nth-child(3)
+                        margin: 0 15px
+                    &:nth-child(4)
+                        margin: 0 15px
+                    .descr
+                        font-size: 20px
+                    .subdescr
+                        font-size: 15px
+                        
+
+
+        
+
+    
+
+
+     
                     
                     
                     
