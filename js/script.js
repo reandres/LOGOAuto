@@ -48,11 +48,13 @@ window.addEventListener('DOMContentLoaded', function() {
     const menu = document.querySelector('.header__wrapper_mobile');
     const hamburger = document.querySelector('.hamburger_menu');
     const logo = document.querySelector('.header');
+    const scroll = document.querySelector('.body');
     
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('hamburger_menu_active');
         menu.classList.toggle('header__wrapper_mobile_active');
         logo.classList.toggle('header_active');
+        scroll.classList.toggle('body_active');
     });
 }); 
   

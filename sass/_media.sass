@@ -85,9 +85,10 @@
 
 @media (max-width: 991px)
     body
-        .body  
+        .body 
             &_active
-                overflow: hidden 
+                overflow: hidden
+    body
         .hamburger_menu
             display: flex
             flex-direction: column
@@ -133,6 +134,7 @@
                         position: absolute
                         top: 10px
                         transform: translateY(3px) rotate(45deg)
+
         .header
             position: relative  
             &__logo
@@ -168,8 +170,7 @@
                     z-index: 2
                     span
                         color: $white
-                
-               
+                                
             &__menu
                 display: flex
                 flex-direction: column
